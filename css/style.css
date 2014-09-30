@@ -55,10 +55,7 @@ body {
 	-moz-transition: .4s ease all;
 	-ms-transition: .4s ease all;
 	transition: .4s ease all;
-}
-.btn:hover {
 	border-bottom-width: 4px;
-	margin-top: 8px;
 }
 #particles {
 	background: #21c1e3;

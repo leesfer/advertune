@@ -57,8 +57,7 @@
               <iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/167794448&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
               <div class="featured_info"> <a href="https://soundcloud.com/thekingdumb" target="_blank">The Kingdumb</a>
                 <p>Breathless Remix</p>
-                <a href="http://www.beatport.com/track/breathless-ft-michelle-quezada-the-kingdumb-remix/5806587" target="_blank" class="btn btn-success">Buy now!</a>
-              </div>
+                <a href="http://www.beatport.com/track/breathless-ft-michelle-quezada-the-kingdumb-remix/5806587" target="_blank" class="btn btn-success">Buy now!</a> </div>
             </div>
           </div>
           <canvas id="drawing_canvas"></canvas>
@@ -167,29 +166,27 @@
           <p>You can link the button to anywhere you want. Just hand us the link!</p>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="question">
-        <h5>How am I charged?</h5>
-        <p>You deposit through Paypal and we will automatically display your ad as many times as your balance allows.</p>
+      <div class="col-sm-6">
+        <div class="question">
+          <h5>How am I charged?</h5>
+          <p>You deposit through Paypal and we will automatically display your ad as many times as your balance allows.</p>
+        </div>
       </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="question">
-        <h5>Can I see statistics?</h5>
-        <p>Of course! You can see what blog displayed your track, how many views it received, and how many times it was clicked.</p>
+      <div class="col-sm-6">
+        <div class="question">
+          <h5>Can I see statistics?</h5>
+          <p>Of course! You can see what blog displayed your track, how many views it received, and how many times it was clicked.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
 <div class="container-fluid pricing">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <h3>How much does it cost?</h3>
-        <p>We take pride in being 100% transparent with all costs, so we will come right out and tell the world:</p>
+        <p>We take pride in being 100% transparent, so we will come right out and tell the world:</p>
       </div>
     </div>
     <div class="row">
@@ -197,7 +194,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">Simple pricing.</div>
           <div class="panel-body">
-            <h4>$1 = 100</h4>
+            <h4><span style="font-size: 80px;font-weight:100;">$</span>1 = 100</h4>
           </div>
           <div class="panel-footer"> For every dollar, your track gets shown 100 times. Period. </div>
         </div>
@@ -228,38 +225,40 @@
       </div>
       <div class="modal-body">
         <form role="form">
-        	<div class="col-sm-6">
-          <div class="form-group">
-            <label for="exampleInputEmail1">First name</label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="John">
-          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">First name</label>
+              <input type="email" class="form-control input-lg" id="artistFirstName" placeholder="John">
+            </div>
           </div>
           <div class="col-sm-6">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Last name</label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Doe">
-          </div>
-          </div>
-          <div class="col-sm-12">
-          <div class="form-group">
-            <label for="exampleInputPassword1">Email</label>
-            <input type="email" class="form-control input-lg" id="exampleInputPassword1" placeholder="email@domain.com">
-          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Last name</label>
+              <input type="email" class="form-control input-lg" id="artistLastName" placeholder="Doe">
+            </div>
           </div>
           <div class="col-sm-12">
-          <div class="form-group">
-            <label for="exampleInputPassword1">Soundcloud URL</label>
-            <input type="text" class="form-control input-lg" id="exampleInputPassword1" placeholder="http://soundcloud.com/yourprofile">
-          </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control input-lg" id="artistEmail" placeholder="email@domain.com">
+            </div>
           </div>
           <div class="col-sm-12">
-          <p><b>What is your estimated budget?</b></p>
-          <div id="sliderValue"></div>
-          <div class="col-sm-10 col-sm-offset-1">
-          	<div id="slider"></div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Soundcloud URL</label>
+              <input type="text" class="form-control input-lg" id="artistSoundcloud" placeholder="http://soundcloud.com/yourprofile">
+            </div>
           </div>
+          <div class="col-sm-12">
+            <p><b>What is your estimated budget?</b></p>
+            <div id="sliderValue"></div>
+            <div class="col-sm-10 col-sm-offset-1">
+              <div id="slider"></div>
+            </div>
           </div>
-          <center><button type="submit" class="btn btn-lg btn-success" style="margin-top: 80px;">Submit</button></center>
+          <center>
+            <button type="submit" class="btn btn-lg btn-success" style="margin-top: 80px;">Submit</button>
+          </center>
         </form>
       </div>
     </div>
@@ -276,38 +275,40 @@
       </div>
       <div class="modal-body">
         <form role="form">
-        	<div class="col-sm-6">
-          <div class="form-group">
-            <label for="exampleInputEmail1">First name</label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="John">
-          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">First name</label>
+              <input type="email" class="form-control input-lg" id="publisherFirstName" placeholder="John">
+            </div>
           </div>
           <div class="col-sm-6">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Last name</label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Doe">
-          </div>
-          </div>
-          <div class="col-sm-12">
-          <div class="form-group">
-            <label for="exampleInputPassword1">Email</label>
-            <input type="email" class="form-control input-lg" id="exampleInputPassword1" placeholder="email@domain.com">
-          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Last name</label>
+              <input type="email" class="form-control input-lg" id="publisherLastName" placeholder="Doe">
+            </div>
           </div>
           <div class="col-sm-12">
-          <div class="form-group">
-            <label for="exampleInputPassword1">Website URL</label>
-            <input type="text" class="form-control input-lg" id="exampleInputPassword1" placeholder="http://domain.com">
-          </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control input-lg" id="publisherEmail" placeholder="email@domain.com">
+            </div>
           </div>
           <div class="col-sm-12">
-          <p><b>What are your estimated monthly page views?</b></p>
-          <div id="sliderTrafficValue"></div>
-          <div class="col-sm-10 col-sm-offset-1">
-          	<div id="sliderTraffic"></div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Website URL</label>
+              <input type="text" class="form-control input-lg" id="publisherURL" placeholder="http://domain.com">
+            </div>
           </div>
+          <div class="col-sm-12">
+            <p><b>What are your estimated monthly page views?</b></p>
+            <div id="sliderTrafficValue"></div>
+            <div class="col-sm-10 col-sm-offset-1">
+              <div id="sliderTraffic"></div>
+            </div>
           </div>
-          <center><button type="submit" class="btn btn-lg btn-success" style="margin-top: 80px;">Submit</button></center>
+          <center>
+            <button type="submit" class="btn btn-lg btn-success" style="margin-top: 80px;">Submit</button>
+          </center>
         </form>
       </div>
     </div>
