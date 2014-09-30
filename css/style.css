@@ -305,9 +305,8 @@ body {
   margin: 0 auto;
   top: -100px;
   z-index: 200;
-  padding: 100px 0px 0px 0px
-  bottom: -100px;
-box-sizing: content-box;
+  padding: 100px 0px 0px 0px;
+  box-sizing: content-box;
 }
 
 .pricing .bubble-container {
