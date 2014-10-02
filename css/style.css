@@ -15,14 +15,11 @@ body {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 .navbar .navbar-brand {
-	color: #000;
+	color: #fff;
 	margin: 0px;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
 	margin-left: 0px;
-}
-.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-	color: #fff;
 }
 .navbar .navbar-brand img {
 	height: 20px;
@@ -35,6 +32,9 @@ body {
 	-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
 }
 .navbar .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
 	color: rgb(44, 62, 80);
 }
 .btn-default {
@@ -136,33 +136,20 @@ body {
 .advertune_featured .featured_info {
 	width: 100%;
 	height: 60px;
-	padding: 10px;
-	position: absolute;
-	bottom: 0px;
-	opacity: 0;
+	float: left;
 	background: rgb(44, 62, 80);
-	-webkit-transition: 1s ease all;
-	-moz-transition: 1s ease all;
-	-ms-transition: 1s ease all;
-	transition: 1s ease all;
 	color: #fff;
 	text-align: left;
 }
-.advertune_featured .featured_info .btn {
-	margin-top: 8px;
-	padding: 10px 20px;
+.advertune_featured .featured_info a {
+	line-height: 60px;
+	width: 50%;
+	padding: 0px 10px;
+	border-right: 1px solid #fff;
 }
-.advertune_featured:hover .featured_info {
-	bottom: -66px;
-	opacity: 1;
-	box-shadow: 0px 0px 0px 6px rgb(44, 62, 80);
+.advertune_featured .featured_info a:last-child {
+	border-right: none;
 }
-.advertune_featured .featured_info .btn {
-	position: absolute;
-	right: 10px;
-	top: 0px;
-}
-
 .bullets {
 	padding: 120px 0px 60px 0px;
 	text-align: center;
@@ -239,6 +226,7 @@ body {
 }
 .why h3 {
 	font-weight: 900;
+	font-size: 30px;
 }
 .why h4 {
 	font-weight: 300;
