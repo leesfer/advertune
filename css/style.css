@@ -140,6 +140,7 @@ body {
 	background: rgb(44, 62, 80);
 	color: #fff;
 	text-align: left;
+	margin-top: -5px;
 }
 .advertune_featured .featured_info a {
 	line-height: 50px;
@@ -147,9 +148,10 @@ body {
 	float: left;
 	width: 50%;
 	padding: 0px 10px;
-	border-right: 1px solid #fff;
+	border-right: 1px solid #1c2937, 2px solid #435c75;
 	color: #fff;
 	text-shadow: 0px -1px 0px #000;
+	text-align: center;
 }
 .advertune_featured .featured_info a:last-child {
 	border-right: none;
