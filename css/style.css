@@ -173,7 +173,7 @@ body {
 	text-align: center;
 	text-decoration: none !important;
 }
-.advertune_features .featured_info a:hover {
+.advertune_featured .featured_info a:hover {
 	background: #435c75;
 }
 .advertune_featured .featured_info a i {
