@@ -12,7 +12,7 @@ body {
 	color: #000;
 }
 .navbar .container {
-	border-bottom: 1px solid rgba(255,255,2550.4);
+	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 .navbar .navbar-brand {
 	color: #000;
