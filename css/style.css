@@ -51,7 +51,8 @@ body {
 	-moz-transition: .4s ease all;
 	-ms-transition: .4s ease all;
 	transition: .4s ease all;
-	border-bottom-width: 4px;
+	border-bottom-width: 4px !important;
+	border-style: solid !important;
 }
 #particles {
 	background: #21c1e3;
