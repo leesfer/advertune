@@ -640,6 +640,16 @@ body {
 	.bullets .col-sm-4::after {
 		display: none;
 	}
+	.why .why_box {
+	border-right: none;
+	}
+	.why h3 {
+font-size: 24px;
+}
+	.why h4 {
+	font-size: 20px;
+	line-height: 30px;
+	}
 	.pricing h4 {
 	font-size: 50px;
 	}
