@@ -131,7 +131,7 @@ body {
 	z-index: 200;
 }
 .advertune_featured:hover {
-	box-shadow: 0px 0px 0px 6px rgb(44, 62, 80);
+	box-shadow: 0px 0px 0px 6px #1c2937;
 }
 .advertune_featured .advertune_powered {
 	width: 100%;
@@ -143,6 +143,12 @@ body {
 .advertune_featured .advertune_powered p {
 	font-size: 8px;
 	line-height: 20px;
+	color: #fff;
+}
+.advertune_featured .advertune_powered img {
+	height: 10px;
+	margin-top: -2px;
+	margin-left: 10px;
 }
 .advertune_featured .featured_info {
 	width: 100%;
@@ -153,10 +159,11 @@ body {
 	text-align: left;
 	margin-top: -5px;
 	border-top: 1px solid #1c2937;
+	box-sizing: border-box;
 }
 .advertune_featured .featured_info a {
-	line-height: 50px;
-	height: 50px;
+	line-height: 49px;
+	height: 49px;
 	float: left;
 	width: 50%;
 	padding: 0px 10px;
