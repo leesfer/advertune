@@ -233,6 +233,19 @@ body {
 	background: transparent;
 	border-color: #cea917;
 }
+.why {
+	padding: 60px 0px 200px 0px;
+	text-align: center;
+}
+.why h3 {
+	font-weight: 900;
+}
+.why h4 {
+	font-weight: 300;
+	margin-bottom:  80px;
+	font-size: 24px;
+	line-height: 36px;
+}
 .faq {
 	padding: 60px 0px 200px 0px;
 	text-align: center;
