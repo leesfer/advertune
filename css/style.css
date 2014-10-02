@@ -129,6 +129,7 @@ body {
 	transition: 0.5s ease all;
 	position: relative;
 	z-index: 200;
+	border-radius: 4px;
 }
 .advertune_featured:hover {
 	box-shadow: 0px 0px 0px 1px #435c75, 0px 0px 0px 4px #1c2937;
@@ -139,6 +140,7 @@ body {
 	float: left;
 	background: rgb(44, 62, 80);
 	border-bottom: 1px solid #1c2937;
+	border-radius: 5px 5px 0px 0px;
 }
 .advertune_featured .advertune_powered p {
 	font-size: 8px;
@@ -160,6 +162,7 @@ body {
 	margin-top: -5px;
 	border-top: 1px solid #1c2937;
 	box-sizing: border-box;
+	border-radius: 0px 0px 5px 5px;
 }
 .advertune_featured .featured_info a {
 	line-height: 49px;
@@ -172,6 +175,7 @@ body {
 	text-shadow: 0px -1px 0px #000;
 	text-align: center;
 	text-decoration: none !important;
+	border-radius: 0px 0px 0px 5px;
 }
 .advertune_featured .featured_info a:hover {
 	background: #435c75;
@@ -183,6 +187,7 @@ body {
 }
 .advertune_featured .featured_info a:last-child {
 	box-shadow: none;
+	border-radius: 0px 0px 5px 0px;
 }
 .bullets {
 	padding: 120px 0px 60px 0px;
