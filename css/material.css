@@ -383,7 +383,7 @@ body .jumbotron-material-lightgrey,
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.84);
+  color: #fff;
   -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
           transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none !important;
