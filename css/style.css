@@ -242,7 +242,7 @@ body {
 }
 .why h4 {
 	font-weight: 300;
-	margin-bottom:  80px;
+	margin-bottom:  40px;
 	font-size: 24px;
 	line-height: 36px;
 }
@@ -252,8 +252,12 @@ body {
 	font-weight: 700;
 	font-size: 20px;
 }
+.why .why_box:last-child {
+	border-right: none;
+}
 .why p {
 	font-size: 16px;
+	margin-top: 20px;
 }
 .faq {
 	padding: 60px 0px 200px 0px;
