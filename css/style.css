@@ -22,7 +22,7 @@ body {
 	margin-left: 0px;
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-	color: #21c1e3;
+	color: #fff;
 }
 .navbar .navbar-brand img {
 	height: 20px;
