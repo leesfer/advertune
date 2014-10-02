@@ -135,10 +135,14 @@ body {
 }
 .advertune_featured .advertune_powered {
 	width: 100%;
-	height: 14px;
+	height: 20px;
 	float: left;
 	background: rgb(44, 62, 80);
 	border-bottom: 1px solid #1c2937;
+}
+.advertune_featured .advertune_powered p {
+	font-size: 8px;
+	line-height: 20px;
 }
 .advertune_featured .featured_info {
 	width: 100%;
