@@ -260,7 +260,7 @@ body {
 	margin-top: 20px;
 }
 .faq {
-	padding: 60px 0px 200px 0px;
+	padding: 60px 0px;
 	text-align: center;
 }
 .faq h3 {
@@ -564,6 +564,7 @@ body {
 .footer {
 	padding: 20px 0px;
 	font-size: 11px;
+	text-align: center;
 }
 .footer p {
 	margin: 0px;
