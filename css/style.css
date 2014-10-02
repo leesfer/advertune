@@ -131,7 +131,7 @@ body {
 	z-index: 200;
 }
 .advertune_featured:hover {
-	box-shadow: 0px 0px 0px 6px #1c2937;
+	box-shadow: 0px 0px 0px 6px #1c2937, 0px 0px 0px 1px #435c75;
 }
 .advertune_featured .advertune_powered {
 	width: 100%;
