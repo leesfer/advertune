@@ -529,7 +529,7 @@ body {
 	-webkit-animation: record 3s linear infinite;
 	transform-origin: 110.4px 121.4px;
 }
- @keyframes jitter {
+@keyframes jitter {
  0% {
  transform: rotate( 1deg );
 }
