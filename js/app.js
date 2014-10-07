@@ -33,7 +33,7 @@ angular.module('myApp', [
 	});
 	$routeProvider.when('/publishers', {
 		templateUrl: 'partials/publishers.html',
-		controller: 'SignUpController'
+		controller: 'publisherController'
 	});
   	$routeProvider.otherwise({redirectTo: '/'});
 }]);
