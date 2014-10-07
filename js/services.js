@@ -5,7 +5,7 @@
 angular.module('myApp.services', [])
 
 	.factory('FIREBASE_URL', function() {
-		return 'https://waitandeat-elias.firebaseio.com/';
+		return 'https://advertune.firebaseio.com/';
 	})
 
 	.factory('dataService', function($firebase, FIREBASE_URL){
@@ -19,11 +19,11 @@ angular.module('myApp.services', [])
 
 	.factory('advertiserService', function(dataService) {
 
-		var advertisers = dataService.$child('advertisers');
+		var advertisersDb = dataService.$child('advertisers');
 
 		var advertiserServiceObject = {
 			saveAdvertiser: function(advertiser) {
-				advertisers.$add(advertiser);
+				advertisersDb.$add(advertiser);
 			}
 		};
 
