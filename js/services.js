@@ -23,11 +23,11 @@ angular.module('myApp.services', [])
 
 		var advertiserServiceObject = {
 			saveAdvertiser: function(advertiser) {
-				advertisers.$add(party);
+				advertisers.$add(advertiser);
 			}
 		};
 
-		return partyServiceObject;
+		return advertiserServiceObject;
 
 	})
 
