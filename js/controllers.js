@@ -11,10 +11,10 @@ angular.module('myApp.controllers', [])
 	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService){
 
 
-		// Store data from the waitlist form
+		// Store data from the advertiser form
 		$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
 
-		//Save a new party to the waitlist
+		//Save a new advertiser to the waitlist
 		$scope.saveAdvertiser = function() {
 			advertiserService.saveAdvertiser($scope.advertiser);
 			$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
