@@ -5,6 +5,7 @@
 angular.module('myApp.controllers', [])
 
 	.controller('LandingPageController', [function() {
+		confetti();
 		bubbles();
 	}])
 
