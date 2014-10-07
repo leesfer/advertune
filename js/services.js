@@ -31,6 +31,20 @@ angular.module('myApp.services', [])
 
 	})
 
+	.factory('publisherService', function(dataService) {
+
+		var publishersDb = dataService.$child('publishers');
+
+		var publisherServiceObject = {
+			savepublisher: function(publisher) {
+				publishersDb.$add(publisher);
+			}
+		};
+
+		return publisherServiceObject;
+
+	})
+
 	.factory('authService', function($firebaseSimpleLogin, $location, $rootScope, FIREBASE_URL, dataService) {
 
 		var authRef = new Firebase(FIREBASE_URL);

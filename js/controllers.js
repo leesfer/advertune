@@ -21,6 +21,20 @@ angular.module('myApp.controllers', [])
 		};
 
 	}])
+
+	.controller('publisherController', ['$scope', 'publisherService', function($scope, publisherService){
+
+
+		// Store data from the publisher form
+		$scope.publisher = {firstname: '', lastname: '', email: '', size: ''};
+
+		//Save a new publisher to the waitlist
+		$scope.savepublisher = function() {
+			publisherService.savepublisher($scope.publisher);
+			$scope.publisher = {firstname: '', lastname: '', email: '', size: ''};
+		};
+
+	}])
 	
 	.controller('AuthController', ['$scope', 'authService', function($scope, authService){
 
