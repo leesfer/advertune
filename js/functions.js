@@ -94,6 +94,8 @@ $( document ).ready(function() {
 
     bubbles();
 
+    /*
+
     // CONFETTI
 
     const TWO_PI = Math.PI * 2;
@@ -329,13 +331,13 @@ $( document ).ready(function() {
 
     // math and stuff
 
-    /**
-     * easing equations from http://gizma.com/easing/
-     * t = current time
-     * b = start value
-     * c = delta value
-     * d = duration
-     */
+    
+    // * easing equations from http://gizma.com/easing/
+    // * t = current time
+    // * b = start value
+    // * c = delta value
+    // * d = duration
+    
     var Ease = {
         inCubic:function (t, b, c, d) {
             t /= d;
@@ -367,5 +369,7 @@ $( document ).ready(function() {
 
         return p;
     }
+    
+    */
 
 });
