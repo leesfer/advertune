@@ -74,11 +74,6 @@ $( document ).ready(function() {
     		$('.waves').css('background-position', amountMovedX + 'px ' + 'top');
     });
 
-    // BUBBLES
-    
-
-    bubbles();
-
     /*
 
     // CONFETTI

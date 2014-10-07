@@ -5,7 +5,7 @@
 angular.module('myApp.controllers', [])
 
 	.controller('LandingPageController', [function() {
-
+		bubbles();
 	}])
 
 	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService){
