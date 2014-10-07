@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.controllers',
   'firebase'
 ])
-.config(['$routeProvider', function($routeProvider, $locationProvider) {
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when('/', {
 		templateUrl: 'partials/landing_page.html',
 		controller: 'LandingPageController'
