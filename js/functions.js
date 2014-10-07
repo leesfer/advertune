@@ -1,14 +1,30 @@
 // JavaScript Document
 
-function bubbles() {
+
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 10);
+    		$('.clouds_top').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 25);
+    		$('.clouds_bottom').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 25);
+    		$('.waves').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+
+    // BUBBLES
+
+    function bubbles() {
 
       var $bubbles = $('.bubbles');
 
       // Settings
-      var min_bubble_count = 30, // Minimum number of bubbles
-          max_bubble_count = 60, // Maximum number of bubbles
+      var min_bubble_count = 25, // Minimum number of bubbles
+          max_bubble_count = 50, // Maximum number of bubbles
           min_bubble_size = 4, // Smallest possible bubble diameter (px)
-          max_bubble_size = 12; // Largest possible bubble diameter (px)
+          max_bubble_size = 10; // Largest possible bubble diameter (px)
       
       // Calculate a random number of bubbles based on our min/max
       var bubbleCount = min_bubble_count + Math.floor(Math.random() * (max_bubble_count + 1));
@@ -58,23 +74,6 @@ function bubbles() {
         
       });
     }
-
-$( document ).ready(function() {
-
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 10);
-    		$('.clouds_top').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 25);
-    		$('.clouds_bottom').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 25);
-    		$('.waves').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-
-    /*
 
     // CONFETTI
 
@@ -349,7 +348,3 @@ $( document ).ready(function() {
 
         return p;
     }
-    
-    */
-
-});
