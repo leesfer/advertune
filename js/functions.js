@@ -1,22 +1,6 @@
 // JavaScript Document
-$( document ).ready(function() {
 
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 10);
-    		$('.clouds_top').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 25);
-    		$('.clouds_bottom').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-    $(document).mousemove(function(e){
-    		var amountMovedX = (e.pageX * -1 / 25);
-    		$('.waves').css('background-position', amountMovedX + 'px ' + 'top');
-    });
-
-    // BUBBLES
-    
-    function bubbles() {
+function bubbles() {
 
       var $bubbles = $('.bubbles');
 
@@ -74,6 +58,24 @@ $( document ).ready(function() {
         
       });
     }
+
+$( document ).ready(function() {
+
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 10);
+    		$('.clouds_top').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 25);
+    		$('.clouds_bottom').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+    $(document).mousemove(function(e){
+    		var amountMovedX = (e.pageX * -1 / 25);
+    		$('.waves').css('background-position', amountMovedX + 'px ' + 'top');
+    });
+
+    // BUBBLES
+    
 
     bubbles();
 
