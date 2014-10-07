@@ -21,10 +21,10 @@ $( document ).ready(function() {
     function bubbles() {
       
       // Settings
-      var min_bubble_count = 20, // Minimum number of bubbles
-          max_bubble_count = 40, // Maximum number of bubbles
-          min_bubble_size = 3, // Smallest possible bubble diameter (px)
-          max_bubble_size = 8; // Largest possible bubble diameter (px)
+      var min_bubble_count = 30, // Minimum number of bubbles
+          max_bubble_count = 60, // Maximum number of bubbles
+          min_bubble_size = 4, // Smallest possible bubble diameter (px)
+          max_bubble_size = 12; // Largest possible bubble diameter (px)
       
       // Calculate a random number of bubbles based on our min/max
       var bubbleCount = min_bubble_count + Math.floor(Math.random() * (max_bubble_count + 1));
