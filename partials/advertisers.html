@@ -7,11 +7,11 @@
 			    <form ng-submit="saveAdvertiser()" role="form">
 				  <div class="form-group">
 				    <label for="advertiserFirstName">First Name</label>
-				    <input ng-model="advertiser.firstName" type="text" class="form-control" id="advertiserFirstName" placeholder="First Name">
+				    <input ng-model="advertiser.firstname" type="text" class="form-control" id="advertiserFirstName" placeholder="First Name">
 				  </div>
 				  <div class="form-group">
 				    <label for="advertiserFirstName">Last Name</label>
-				    <input ng-model="advertiser.lastName" type="text" class="form-control" id="advertiserLastName" placeholder="Last Name">
+				    <input ng-model="advertiser.lastname" type="text" class="form-control" id="advertiserLastName" placeholder="Last Name">
 				  </div>
 				  <div class="form-group">
 				    <label for="advertiserEmail">Your email</label>
@@ -32,6 +32,7 @@
 				  </div>
 				  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 				</form>
+				{{advertiser.firstname}}
 			</div>
 		</div>
 	</div>

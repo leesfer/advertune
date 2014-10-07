@@ -12,12 +12,12 @@ angular.module('myApp.controllers', [])
 
 
 		// Store data from the advertiser form
-		$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
+		$scope.advertiser = {firstname: '', lastname: '', email: '', budget: ''};
 
 		//Save a new advertiser to the waitlist
 		$scope.saveAdvertiser = function() {
 			advertiserService.saveAdvertiser($scope.advertiser);
-			$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
+			$scope.advertiser = {firstname: '', lastname: '', email: '', budget: ''};
 		};
 
 	}])
