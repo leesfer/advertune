@@ -15,11 +15,11 @@ $( document ).ready(function() {
     });
 
     // BUBBLES
-
-    var $bubbles = $('.bubbles');
-
+    
     function bubbles() {
-      
+
+      var $bubbles = $('.bubbles');
+
       // Settings
       var min_bubble_count = 30, // Minimum number of bubbles
           max_bubble_count = 60, // Maximum number of bubbles
