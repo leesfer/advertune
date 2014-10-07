@@ -43,9 +43,15 @@ body {
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
 	color: rgb(44, 62, 80);
 }
+.btn-warning {
+	background: #fe5722;
+	border-color: #b2320a;
+	color: #fff;
+}
 .btn-default {
 	border-color: #fff;
 	color: #fff;
+	background: transparent;
 }
 .btn-default:hover {
 	border-color: #fff;
