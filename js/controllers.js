@@ -8,7 +8,7 @@ angular.module('myApp.controllers', [])
 
 	}])
 
-	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService, ){
+	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService){
 
 
 		// Store data from the waitlist form
