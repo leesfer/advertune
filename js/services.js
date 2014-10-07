@@ -17,45 +17,17 @@ angular.module('myApp.services', [])
 
 	})
 
-	.factory('partyService', function(dataService) {
+	.factory('advertiserService', function(dataService) {
 
-		var users = dataService.$child('users');
+		var advertisers = dataService.$child('advertisers');
 
-		var partyServiceObject = {
-			saveParty: function(party, userId) {
-				// parties.$add(party);
-				users.$child(userId).$child('parties').$add(party);
-			},
-			getPartiesByUserId: function(userId) {
-				return users.$child(userId).$child('parties');
+		var advertiserServiceObject = {
+			saveAdvertiser: function(advertiser) {
+				advertisers.$add(party);
 			}
 		};
 
 		return partyServiceObject;
-
-	})
-
-	.factory('textMessageService', function(dataService, partyService) {
-
-		var textMessages = dataService.$child('textMessages');
-
-		var textMessageServiceObject = {
-
-			sendTextMessage: function(party, userId) {
-				var newTextMessage = {
-					phoneNumber: party.phone,
-					size: party.size,
-					name: party.name
-				};
-
-				textMessages.$add(newTextMessage);
-
-				partyService.getPartiesByUserId(userId).$child(party.$id).$update({notified: 'Yes'});
-
-			}
-		};
-
-		return textMessageServiceObject;
 
 	})
 

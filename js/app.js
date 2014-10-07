@@ -29,7 +29,7 @@ angular.module('myApp', [
 	});
 	$routeProvider.when('/advertisers', {
 		templateUrl: 'partials/advertisers.html',
-		controller: 'SignUpController'
+		controller: 'advertiserController'
 	});
 	$routeProvider.when('/publishers', {
 		templateUrl: 'partials/publishers.html',

@@ -8,31 +8,16 @@ angular.module('myApp.controllers', [])
 
 	}])
 
-	.controller('SignUpController', [function() {
+	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService, ){
 
-	}])
-
-	.controller('WaitListController', ['$scope', 'partyService', 'textMessageService', 'authService', function($scope, partyService, textMessageService, authService){
-
-		//Bind user's parties to $scope.parties
-		authService.getCurrentUser().then(function(user){
-			if (user) {
-				$scope.parties = partyService.getPartiesByUserId(user.id);
-			};
-		})
 
 		// Store data from the waitlist form
-		$scope.guest = {name: '', phone: '', size: '', done: false, notified: 'No'};
+		$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
 
 		//Save a new party to the waitlist
-		$scope.saveParty = function() {
-			partyService.saveParty($scope.guest, $scope.currentUser.id);
-			$scope.guest = {name: '', phone: '', size: '', done: false, notified: 'No'};
-		};
-
-		// Function to send a text message to a guest
-		$scope.sendTextMessage = function(party) {
-			textMessageService.sendTextMessage(party, $scope.currentUser.id);
+		$scope.saveAdvertiser = function() {
+			advertiserService.saveAdvertiser($scope.advertiser);
+			$scope.advertiser = {firstName: '', lastName: '', email: '', budget: ''};
 		};
 
 	}])
