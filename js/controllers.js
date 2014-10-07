@@ -29,7 +29,7 @@ angular.module('myApp.controllers', [])
 		$scope.publisher = {firstname: '', lastname: '', email: '', size: ''};
 
 		//Save a new publisher to the waitlist
-		$scope.savepublisher = function() {
+		$scope.savePublisher = function() {
 			publisherService.savepublisher($scope.publisher);
 			$scope.publisher = {firstname: '', lastname: '', email: '', size: ''};
 		};
