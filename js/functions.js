@@ -75,6 +75,8 @@ $( document ).ready(function() {
       });
     }
 
+    /*
+
     // In case users value their laptop battery life
     // Allow them to turn the bubbles off
     $('.bubble-toggle').click(function(){
@@ -91,6 +93,8 @@ $( document ).ready(function() {
       
       return false;
     });
+
+    */
 
     bubbles();
 
