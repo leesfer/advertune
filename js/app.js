@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.controllers',
   'firebase'
 ])
-.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', function($routeProvider, $locationProvider) {
 	$routeProvider.when('/', {
 		templateUrl: 'partials/landing_page.html',
 		controller: 'LandingPageController'
@@ -36,4 +36,7 @@ angular.module('myApp', [
 		controller: 'publisherController'
 	});
   	$routeProvider.otherwise({redirectTo: '/'});
+
+  	// use the HTML5 History API
+  	$locationProvider.html5Mode(true);
 }]);
