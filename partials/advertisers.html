@@ -4,31 +4,40 @@
 			<div class="col-sm-8 col-sm-offset-2">
 			    <h1>Do you want to start getting your music spread across the biggest music blogs on the internet?</h1>
 			    <hr>
+			    <div class="row">
 			    <form ng-submit="saveAdvertiser()" role="form">
-				  <div class="form-group">
-				    <label for="advertiserFirstName">First Name</label>
-				    <input ng-model="advertiser.firstname" type="text" class="form-control" id="advertiserFirstName" placeholder="First Name">
+			    	<div class="col-sm-6">
+					  <div class="form-group">
+					    <label for="advertiserFirstName">First Name</label>
+					    <input ng-model="advertiser.firstname" type="text" class="form-control input-lg" id="advertiserFirstName" placeholder="First Name">
+					  </div>
 				  </div>
-				  <div class="form-group">
-				    <label for="advertiserFirstName">Last Name</label>
-				    <input ng-model="advertiser.lastname" type="text" class="form-control" id="advertiserLastName" placeholder="Last Name">
+				  <div class="col-sm-6">
+					  <div class="form-group">
+					    <label for="advertiserFirstName">Last Name</label>
+					    <input ng-model="advertiser.lastname" type="text" class="form-control input-lg" id="advertiserLastName" placeholder="Last Name">
+					  </div>
 				  </div>
-				  <div class="form-group">
-				    <label for="advertiserEmail">Your email</label>
-				    <input ng-model="advertiser.email" type="email" class="form-control" id="advertiserEmail" placeholder="email@domain.com">
+				  <div class="col-sm-12">
+					  <div class="form-group">
+					    <label for="advertiserEmail">Your email</label>
+					    <input ng-model="advertiser.email" type="email" class="form-control input-lg" id="advertiserEmail" placeholder="email@domain.com">
+					  </div>
 				  </div>
-				  <div class="form-group">
-				    <label for="advertiserBudget">Your advertising budget</label>
-				    <select ng-model="advertiser.budget" type="text" class="form-control" id="advertiserBudget">
-				    	<option>$1-5</option>
-				    	<option>$6-10</option>
-				    	<option>$11-20</option>
-				    	<option>$20-50</option>
-				    	<option>$50-100</option>
-				    	<option>$101-500</option>
-				    	<option>$501-1000</option>
-				    	<option>$1000+</option>
-				    </select>
+				  <div class="col-sm-6">
+					  <div class="form-group">
+					    <label for="advertiserBudget">Your advertising budget</label>
+					    <select ng-model="advertiser.budget" type="text" class="form-control input-lg" id="advertiserBudget">
+					    	<option>$1-5</option>
+					    	<option>$6-10</option>
+					    	<option>$11-20</option>
+					    	<option>$20-50</option>
+					    	<option>$50-100</option>
+					    	<option>$101-500</option>
+					    	<option>$501-1000</option>
+					    	<option>$1000+</option>
+					    </select>
+					  </div>
 				  </div>
 				  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 				</form>

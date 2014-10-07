@@ -42,6 +42,10 @@ body {
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
 	color: rgb(44, 62, 80);
+}.form-control {
+	background: #f2f3f4;
+	border: none;
+	box-shadow:  none;
 }
 .btn-warning {
 	background: #fe5722;
@@ -65,9 +69,6 @@ body {
 	transition: .4s ease all;
 	border-bottom-width: 4px !important;
 	border-style: solid !important;
-}
-#particles {
-	background: #21c1e3;
 }
 .pg-canvas {
 	position: absolute;
