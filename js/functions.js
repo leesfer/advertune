@@ -75,27 +75,6 @@ $( document ).ready(function() {
       });
     }
 
-    /*
-
-    // In case users value their laptop battery life
-    // Allow them to turn the bubbles off
-    $('.bubble-toggle').click(function(){
-      if($bubbles.is(':empty')) {
-        bubbles();
-        $bubbles.show();
-        $(this).text('Bubbles Off');
-      } else {
-        $bubbles.fadeOut(function(){
-          $(this).empty();
-        });
-        $(this).text('Bubbles On');
-      }
-      
-      return false;
-    });
-
-    */
-
     bubbles();
 
     /*
