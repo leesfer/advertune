@@ -8,6 +8,10 @@ angular.module('myApp.controllers', [])
 
 	}])
 
+	.controller('SignUpController', [function() {
+
+	}])
+
 	.controller('WaitListController', ['$scope', 'partyService', 'textMessageService', 'authService', function($scope, partyService, textMessageService, authService){
 
 		//Bind user's parties to $scope.parties

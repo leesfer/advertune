@@ -27,5 +27,13 @@ angular.module('myApp', [
 		templateUrl: 'partials/login.html',
 		controller: 'AuthController'
 	});
+	$routeProvider.when('/advertisers', {
+		templateUrl: 'partials/advertisers.html',
+		controller: 'SignUpController'
+	});
+	$routeProvider.when('/publishers', {
+		templateUrl: 'partials/publishers.html',
+		controller: 'SignUpController'
+	});
   	$routeProvider.otherwise({redirectTo: '/'});
 }]);
