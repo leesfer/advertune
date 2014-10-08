@@ -83,8 +83,6 @@ angular.module('myApp.services', [])
 			}
 		};
 
-		return authServiceObject;
-
 		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
 			// Save currentUser on our rootScope
 			$rootScope.currentUser = user;
@@ -94,5 +92,7 @@ angular.module('myApp.services', [])
 			// Save currentUser on our rootScope as null
 			$rootScope.currentUser = null;
 		});
+
+		return authServiceObject;
 
 	});
