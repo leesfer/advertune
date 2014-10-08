@@ -61,7 +61,7 @@ angular.module('myApp.services', [])
 				});
 			},
 			login: function(userAdv, optionalCallback) {
-				auth.$login('password', user).then(function(data){
+				auth.$login('password', userAdv).then(function(data){
 					console.log(data);
 					
 					if (optionalCallback) {
