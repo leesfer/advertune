@@ -59,6 +59,7 @@ angular.module('myApp.services', [])
 					//	emails.$add({email: user.email});
 					//});
 				});
+			/*
 			},
 			login: function(user, optionalCallback) {
 				auth.$login('password', user).then(function(data){
@@ -79,6 +80,7 @@ angular.module('myApp.services', [])
 			},
 			getCurrentUser: function() {
 				return auth.$getCurrentUser();
+				*/
 			}
 		};
 
