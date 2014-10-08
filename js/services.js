@@ -52,16 +52,16 @@ angular.module('myApp.services', [])
 		var emails = dataService.$child('emails');
 
 		var authServiceObject = {
-			register: function(userAdv) {
-				auth.$createUser(userAdv.email, userAdv.password).then(function(data){
+			register: function(user) {
+				auth.$createUser(user.email, user.password).then(function(data){
 					console.log(data);
-					authServiceObject.login(userAdv, function() {
-						emails.$add({email: userAdv.email});
+					authServiceObject.login(user, function() {
+						emails.$add({email: user.email});
 					});
 				});
 			},
-			login: function(userAdv, optionalCallback) {
-				auth.$login('password', userAdv).then(function(data){
+			login: function(user, optionalCallback) {
+				auth.$login('password', user).then(function(data){
 					console.log(data);
 					
 					if (optionalCallback) {
@@ -82,9 +82,9 @@ angular.module('myApp.services', [])
 			}
 		};
 
-		$rootScope.$on('$firebaseSimpleLogin:login', function(e, userAdv) {
+		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
 			// Save currentUser on our rootScope
-			$rootScope.currentUser = userAdv;
+			$rootScope.currentUser = user;
 		});
 
 		$rootScope.$on('$firebaseSimpleLogin:logout', function() {

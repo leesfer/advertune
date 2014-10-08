@@ -38,16 +38,16 @@ angular.module('myApp.controllers', [])
 	.controller('AuthController', ['$scope', 'authService', function($scope, authService){
 
 		// Object bound to inputs on the register and log in pages
-		$scope.userAdv = {email: '', password: ''};
+		$scope.user = {email: '', password: ''};
 
 		// Method to register a new user using the authService
 		$scope.register = function() {
-			authService.register($scope.userAdv);
+			authService.register($scope.user);
 		};
 
 		// Method to log in a user using the authService
 		$scope.login = function() {
-			authService.login($scope.userAdv);
+			authService.login($scope.user);
 		};
 
 		// Method to log out a user using the authService
