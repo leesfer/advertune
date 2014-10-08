@@ -2,17 +2,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<form ng-submit="saveParty()" class="form-inline" role="form">
+				<form ng-submit="createAd()" class="form-inline" role="form">
 				  <div class="form-group">
-				    <label class="sr-only" for="partyName">Party name</label>
+				    <label class="sr-only" for="adName">Party name</label>
 				    <input ng-model="guest.name" type="text" class="form-control" id="partyName" placeholder="Party name" required>
 				  </div>
 				  <div class="form-group">
-				    <label class="sr-only" for="phoneNumber">Phone number</label>
+				    <label class="sr-only" for="adSoundcloudAccount">Phone number</label>
 				    <input ng-model="guest.phone" type="phone" class="form-control" id="phoneNumber" placeholder="Phone number" required>
 				  </div>
 				  <div class="form-group">
-				    <label class="sr-only" for="sizeOfParty">Size of party</label>
+				    <label class="sr-only" for="adBuyLink">Phone number</label>
+				    <input ng-model="guest.phone" type="phone" class="form-control" id="phoneNumber" placeholder="Buy link" required>
+				  </div>
+				  <div class="form-group">
+				    <label class="sr-only" for="adSoundcloudEmbed">Size of party</label>
 				    <select ng-model="guest.size" type="phone" class="form-control" id="sizeOfParty" placeholder="Size of party" required>
 				    	<option>1</option>
 				    	<option>2</option>
