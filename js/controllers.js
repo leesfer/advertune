@@ -55,4 +55,8 @@ angular.module('myApp.controllers', [])
 			authService.logout();
 		};
 
+	}])
+
+	.controller('DashboardController', [function() {
+		
 	}]);
