@@ -55,9 +55,9 @@ angular.module('myApp.services', [])
 			register: function(user) {
 				auth.$createUser(user.email, user.password).then(function(data){
 					console.log(data);
-					authServiceObject.login(user, function() {
-						emails.$add({email: user.email});
-					});
+					//authServiceObject.login(user, function() {
+					//	emails.$add({email: user.email});
+					//});
 				});
 			},
 			login: function(user, optionalCallback) {
@@ -82,6 +82,8 @@ angular.module('myApp.services', [])
 			}
 		};
 
+		return authServiceObject;
+
 		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
 			// Save currentUser on our rootScope
 			$rootScope.currentUser = user;
@@ -91,7 +93,5 @@ angular.module('myApp.services', [])
 			// Save currentUser on our rootScope as null
 			$rootScope.currentUser = null;
 		});
-
-		return authServiceObject;
 
 	});
