@@ -36,7 +36,7 @@ angular.module('myApp.services', [])
 		var publishersDb = dataService.$child('publishers');
 
 		var publisherServiceObject = {
-			savepublisher: function(publisher) {
+			savePublisher: function(publisher) {
 				publishersDb.$add(publisher);
 			}
 		};
@@ -52,15 +52,15 @@ angular.module('myApp.services', [])
 		var emails = dataService.$child('emails');
 
 		var authServiceObject = {
-			register: function(user) {
-				auth.$createUser(user.email, user.password).then(function(data){
+			register: function(userAdv) {
+				auth.$createUser(userAdv.email, userAdv.password).then(function(data){
 					console.log(data);
-					authServiceObject.login(user, function() {
-						emails.$add({email: user.email});
+					authServiceObject.login(userAdv, function() {
+						emails.$add({email: userAdv.email});
 					});
 				});
 			},
-			login: function(user, optionalCallback) {
+			login: function(userAdv, optionalCallback) {
 				auth.$login('password', user).then(function(data){
 					console.log(data);
 					
@@ -69,7 +69,7 @@ angular.module('myApp.services', [])
 					}
 
 					// Redirect to waitlist page
-					$location.path('/waitlist');
+					$location.path('/dashboard');
 				});
 			},
 			logout: function() {
@@ -82,9 +82,9 @@ angular.module('myApp.services', [])
 			}
 		};
 
-		$rootScope.$on('$firebaseSimpleLogin:login', function(e, user) {
+		$rootScope.$on('$firebaseSimpleLogin:login', function(e, userAdv) {
 			// Save currentUser on our rootScope
-			$rootScope.currentUser = user;
+			$rootScope.currentUser = userAdv;
 		});
 
 		$rootScope.$on('$firebaseSimpleLogin:logout', function() {

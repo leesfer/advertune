@@ -11,7 +11,6 @@ angular.module('myApp.controllers', [])
 
 	.controller('advertiserController', ['$scope', 'advertiserService', function($scope, advertiserService){
 
-
 		// Store data from the advertiser form
 		$scope.advertiser = {firstname: '', lastname: '', email: '', budget: ''};
 
@@ -24,7 +23,6 @@ angular.module('myApp.controllers', [])
 	}])
 
 	.controller('publisherController', ['$scope', 'publisherService', function($scope, publisherService){
-
 
 		// Store data from the publisher form
 		$scope.publisher = {firstname: '', lastname: '', email: '', size: ''};
@@ -40,16 +38,16 @@ angular.module('myApp.controllers', [])
 	.controller('AuthController', ['$scope', 'authService', function($scope, authService){
 
 		// Object bound to inputs on the register and log in pages
-		$scope.user = {email: '', password: ''};
+		$scope.userAdv = {email: '', password: ''};
 
 		// Method to register a new user using the authService
 		$scope.register = function() {
-			authService.register($scope.user);
+			authService.register($scope.userAdv);
 		};
 
 		// Method to log in a user using the authService
 		$scope.login = function() {
-			authService.login($scope.user);
+			authService.login($scope.userAdv);
 		};
 
 		// Method to log out a user using the authService

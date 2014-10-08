@@ -15,9 +15,9 @@ angular.module('myApp', [
 		templateUrl: 'partials/landing_page.html',
 		controller: 'LandingPageController'
 	});
-	$routeProvider.when('/waitlist', {
-		templateUrl: 'partials/waitlist.html',
-		controller: 'WaitListController'
+	$routeProvider.when('/dashboard', {
+		templateUrl: 'partials/dashboard.html',
+		controller: 'DashboardController'
 	});
 	$routeProvider.when('/register', {
 		templateUrl: 'partials/register.html',
