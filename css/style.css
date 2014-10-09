@@ -3,7 +3,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background: #fff;
+	background: #21c1e3;
 	color: rgb(44, 62, 80);
 }
 .navbar {
@@ -202,6 +202,7 @@ body {
 	padding: 120px 0px 60px 0px;
 	text-align: center;
 	position: relative;
+	background: #fff;
 }
 .bullets h2 {
 	font-weight: 900;
@@ -271,6 +272,7 @@ body {
 .why {
 	padding: 100px 0px 200px 0px;
 	text-align: center;
+	background: #fff;
 }
 .why h3 {
 	font-weight: 900;
@@ -298,6 +300,7 @@ body {
 .faq {
 	padding: 60px 0px;
 	text-align: center;
+	background: #fff;
 }
 .faq h3 {
 	font-size: 40px;
@@ -356,6 +359,16 @@ body {
 .pricing .panel-footer {
 	background: rgb(44, 62, 80);
 }
+.pricing .waves {
+	width: 100%;
+	height: 94px;
+	background-image: url(../images/wave_image.png);
+	position: absolute;
+	top: -94px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+}
 .pricing .bubbles {
 	position: absolute;
 	overflow: hidden;
@@ -367,379 +380,11 @@ body {
 	padding: 100px 0px 0px 0px;
 	box-sizing: content-box;
 }
-.pricing .bubble-container {
-	position: absolute;
-	bottom: 0px;
-	-webkit-animation: bubblerise 4s infinite ease-in;
-	-moz-animation: bubblerise 4s infinite ease-in;
-	-ms-animation: bubblerise 4s infinite ease-in;
-	animation: bubblerise 4s infinite ease-in;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	opacity: 0;
-}
-.pricing .bubble {
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	background: url(../images/note_icon.png);
-	background-size: 100% 100%;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-animation: bubblewobble 0.4s infinite linear;
-	-moz-animation: bubblewobble 0.4s infinite linear;
-	-ms-animation: bubblewobble 0.4s infinite linear;
-	animation: bubblewobble 0.4s infinite linear;
-	opacity: 0.5;
-}
-.pricing .waves {
-	width: 100%;
-	height: 94px;
-	background-image: url(../images/wave_image.png);
-	position: absolute;
-	top: -94px;
-	left: 0px;
-	right: 0px;
-	z-index: 100;
-}
- @-webkit-keyframes bubblerise {
- 0% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 5% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 99% {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 100% {
- bottom: 100%;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
-@-moz-keyframes bubblerise {
- 0% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 5% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 99% {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 100% {
- bottom: 100%;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
-@-ms-keyframes bubblerise {
- 0% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 5% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 99% {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 100% {
- bottom: 100%;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
-@keyframes bubblerise {
- 0% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 5% {
- bottom: 0;
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 99% {
- filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
- opacity: 1;
-}
- 100% {
- bottom: 100%;
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
-@-webkit-keyframes bubblewobble {
- 0% {
- margin-left: 0;
-}
- 50% {
- margin-left: 2px;
-}
-}
-@-moz-keyframes bubblewobble {
- 0% {
- margin-left: 0;
-}
- 50% {
- margin-left: 2px;
-}
-}
-@-ms-keyframes bubblewobble {
- 0% {
- margin-left: 0;
-}
- 50% {
- margin-left: 2px;
-}
-}
-@keyframes bubblewobble {
- 0% {
- margin-left: 0;
-}
- 50% {
- margin-left: 2px;
-}
-}
-/* SPINNING RECORD */
-
-#needle {
-	transform-origin: 50% 9% 0;
-	width: 10em;
-	height: 2em;
-	animation: jitter 1s ease-in-out infinite;
-	-moz-animation: jitter 1s ease-in-out infinite;
-	-webkit-animation: jitter 1s ease-in-out infinite;
-	animation-iteration-count: 40;
-	-moz-animation-iteration-count: 40;
-	-webkit-animation-iteration-count: 40;
-	transition: 2s ease-in-out;
-}
-#record {
-	animation: record 3s linear infinite;
-	-moz-animation: record 3s linear infinite;
-	-webkit-animation: record 3s linear infinite;
-	transform-origin: 110.4px 121.4px;
-}
-@keyframes jitter {
- 0% {
- transform: rotate( 1deg );
-}
- 50% {
- transform: rotate( 3deg );
-}
- 100% {
- transform: rotate( 1deg );
-}
-}
-@-webkit-keyframes jitter {
- 0% {
- transform: rotate( 1deg );
-}
- 50% {
- transform: rotate( 3deg );
-}
- 100% {
- transform: rotate( 1deg );
-}
-}
-@-moz-keyframes jitter {
- 0% {
- transform: rotate( 1deg );
-}
- 50% {
- transform: rotate( 3deg );
-}
- 100% {
- transform: rotate( 1deg );
-}
-}
- @keyframes record {
- 0% {
- transform: rotate( 0deg );
-}
- 100% {
- transform: rotate( 720deg );
-}
-}
-@-webkit-keyframes record {
- 0% {
- transform: rotate( 0deg );
-}
- 100% {
- transform: rotate( 720deg );
-}
-}
-@-moz-keyframes record {
- 0% {
- transform: rotate( 0deg );
-}
- 100% {
- transform: rotate( 720deg );
-}
-}
-.float_one {
-	animation-name: floating_one;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-name: floating_one;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: floating_one;
-	-moz-animation-duration: 3s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
-}
-.float_two {
-	animation-name: floating_two;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-name: floating_two;
-	-webkit-animation-duration: 4s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: floating_two;
-	-moz-animation-duration: 4s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
-}
-.float_three {
-	animation-name: floating_three;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-name: floating_three;
-	-webkit-animation-duration: 5s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-moz-animation-name: floating_three;
-	-moz-animation-duration: 5s;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-timing-function: ease-in-out;
-}
- @keyframes floating_one {
- from {
-transform:translate(0, 0px);
-}
- 50% {
-transform:translate(0, 15px);
-}
- to {
-transform: translate(0, 0px);
-}
-}
-@keyframes floating_two {
- from {
-transform:translate(0, 0px);
-}
- 50% {
-transform:translate(0, -15px);
-}
- to {
-transform: translate(0, 0px);
-}
-}
-@keyframes floating_three {
- from {
-transform:translate(0, 0px);
-}
- 50% {
-transform:translate(0, 20px);
-}
- to {
-transform: translate(0, -0px);
-}
-}
-@-webkit-keyframes floating_one {
- from {
--webkit-transform:translate(0, 0px);
-}
- 50% {
--webkit-transform:translate(0, 15px);
-}
- to {
--webkit-transform: translate(0, 0px);
-}
-}
- @-webkit-keyframes floating_two {
- from {
--webkit-transform:translate(0, 0px);
-}
- 50% {
--webkit-transform:translate(0, -15px);
-}
- to {
--webkit-transform: translate(0, 0px);
-}
-}
- @-webkit-keyframes floating_three {
- from {
--webkit-transform:translate(0, 0px);
-}
- 50% {
--webkit-transform:translate(0, 20px);
-}
- to {
--webkit-transform: translate(0, -0px);
-}
-}
-@-moz-keyframes floating_one {
- from {
--moz-transform:translate(0, 0px);
-}
- 50% {
--moz-transform:translate(0, 15px);
-}
- to {
--moz-transform: translate(0, 0px);
-}
-}
- @-moz-keyframes floating_two {
- from {
--moz-transform:translate(0, 0px);
-}
- 50% {
--moz-transform:translate(0, -15px);
-}
- to {
--moz-transform: translate(0, 0px);
-}
-}
- @-moz-keyframes floating_three {
- from {
--moz-transform:translate(0, 0px);
-}
- 50% {
--moz-transform:translate(0, 20px);
-}
- to {
--moz-transform: translate(0, -0px);
-}
-}
 .footer {
 	padding: 20px 0px;
 	font-size: 11px;
 	text-align: center;
+	background: #fff;
 }
 .footer p {
 	margin: 0px;
@@ -752,9 +397,14 @@ transform: translate(0, -0px);
 .dash .btn {
 	border: none;
 }
+.dash .advert_list {
+	padding: 0px;
+	margin: 0px;
+}
 .dash .advert_cont {
 	width: 100%;
-	height: 260px;
+	height: 180px;
+	list-style:  none;
 	position:  relative;
 }
 .dash .advert_cont .sc_cont {
@@ -791,8 +441,9 @@ transform: translate(0, -0px);
 .dash .advert_cont .advert_stats .advert_status {
 	background: #1b2632;
 	width: 120px;
-	height:  180px;
+	height:  120px;
 	color: #fff;
+	text-align: center;
 }
 
 @media (max-width:767px) {
