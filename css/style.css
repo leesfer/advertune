@@ -62,7 +62,7 @@ body {
 	color: rgb(44, 62, 80);
 }
 .btn {
-	font-weight: 900;
+	font-weight: 700;
 	-webkit-transition: .4s ease all;
 	-moz-transition: .4s ease all;
 	-ms-transition: .4s ease all;
@@ -438,6 +438,8 @@ body {
 	border-width: 1px;
 	border-color: #21c1e3;
 	color: #2c3e50;
+	margin: 10px;
+	background: transparent;
 }
 .dash .overview .account {
 	width: 100%;
