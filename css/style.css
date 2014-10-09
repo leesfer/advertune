@@ -68,7 +68,7 @@ body {
 	-ms-transition: .4s ease all;
 	transition: .4s ease all;
 	border-bottom-width: 4px;
-	border-style: solid;
+	border-style: solid !important;
 }
 .pg-canvas {
 	position: absolute;
@@ -397,6 +397,43 @@ body {
 .dash .btn {
 	border: none;
 }
+.dash .overview {
+	width: 100%;
+	margin: 40px 0px;
+}
+.dash .overview .cashmoney {
+	width: 100%;
+	background:  #fff;
+}
+.dash .overview .cashmoney .funds_available {
+	border-right: 1px solid #21c1e3;
+}
+.dash .overview .cashmoney .funds_used {
+}
+.dash .overview .cashmoney .funds_available h4, .dash .overview .cashmoney .funds_used h4 {
+	text-transform: uppercase;
+	font-style:  12px;
+	font-weight: 300;
+	color: #2c3e50;
+}
+.dash .overview .cashmoney .funds_available p, .dash .overview .cashmoney .funds_used p {
+	font-size: 100px;
+	font-weight:  900;
+	color: #2c3e50;
+}
+.dash .overview .cashmoney .funds_available p .dollar_sign, .dash .overview .cashmoney .funds_used p .dollar_sign {
+	font-size: 60px;
+	font-weight:  100;
+	top: -10px;
+}
+.dash .overview .account {
+	width: 100%;
+	background: #2c3e50;
+}
+.dash .overview .account .btn-account {
+	background: #1b2632;
+	color: #fff;
+}
 .dash .advert_list {
 	padding: 0px;
 	margin: 0px;
@@ -442,6 +479,9 @@ body {
 	border-left-width: 0px;
 	border-top-width: 0px;
 	border-bottom-width: 0px;
+	height: 40px;
+	width: 50px;
+	font-size: 20px;
 }
 .dash .advert_cont .advert_title .btn:first-child {
 	border-right-width: 1px;
@@ -460,6 +500,13 @@ body {
 	height:  120px;
 	color: #fff;
 	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 26px 0px;
+}
+.dash .advert_cont .advert_stats .advert_status i {
+	font-size: 32px;
+	margin-bottom: 10px;
 }
 
 @media (max-width:767px) {
