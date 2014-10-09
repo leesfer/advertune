@@ -770,7 +770,7 @@ transform: translate(0, -0px);
 	color: #fff;
 	padding: 0px 20px;
 }
-.dash .advert_cont .advert_title h1 {
+.dash .advert_cont .advert_title h3 {
 	margin-right: 200px;
 	overflow: hidden;
 	white-space: nowrap;
@@ -781,6 +781,7 @@ transform: translate(0, -0px);
 }
 .dash .advert_cont .advert_title .btn {
 	color: #89290a;
+	border: none;
 }
 .dash .advert_cont .advert_stats {
 	background: #141c25;
