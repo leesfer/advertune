@@ -408,9 +408,11 @@ body {
 .dash .overview .cashmoney .funds_available {
 	border-right: 1px solid #21c1e3;
 	padding: 20px 40px;
+	display: inline-block;
 }
 .dash .overview .cashmoney .funds_used {
 	padding: 20px 40px;
+	display: inline-block;
 }
 .dash .overview .cashmoney .funds_available h4, .dash .overview .cashmoney .funds_used h4 {
 	text-transform: uppercase;
@@ -434,10 +436,12 @@ body {
 .dash .overview .account {
 	width: 100%;
 	background: #2c3e50;
+	padding: 10px
 }
 .dash .overview .account .btn-account {
 	background: #1b2632;
 	color: #fff;
+	border-width: 0px;
 }
 .dash .advert_list {
 	padding: 0px;
