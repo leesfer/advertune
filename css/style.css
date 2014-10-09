@@ -433,14 +433,24 @@ body {
 	font-size: 40px;
 	font-weight:  300;
 }
+.dash .overview .cashmoney .btn_add_funds {
+	width: 100px;
+	border-width: 1px;
+	border-color: #21c1e3;
+	color: #2c3e50;
+}
 .dash .overview .account {
 	width: 100%;
 	background: #2c3e50;
 	padding: 10px
 }
-.dash .overview .account .btn-account {
+.dash .overview .account .btn_account {
 	background: #1b2632;
 	color: #fff;
+	border-width: 0px;
+}
+.dash .overview .account .btn_add_ad {
+	width: 100px;
 	border-width: 0px;
 }
 .dash .advert_list {
