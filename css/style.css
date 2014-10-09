@@ -419,6 +419,7 @@ body {
 	margin-left: 300px;
 	color: #fff;
 	padding: 0px 20px;
+	position:  relative;
 }
 .dash .advert_cont .advert_title h3 {
 	overflow: hidden;
@@ -430,15 +431,17 @@ body {
 	padding: 0px;
 	margin: 0px 20% 0px 0px;
 }
+.dash .advert_cont .advert_title .btn-group {
+	position:  absolute;
+	right: 10px;
+	top: 10px;
+}
 .dash .advert_cont .advert_title .btn {
 	color: #89290a;
 	border-right-width: 0px;
 	border-left-width: 0px;
 	border-top-width: 0px;
 	border-bottom-width: 0px;
-	position:  absolute;
-	right: 10px;
-	top: 10px;
 }
 .dash .advert_cont .advert_title .btn:first-child {
 	border-right-width: 1px;
