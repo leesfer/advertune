@@ -67,8 +67,8 @@ body {
 	-moz-transition: .4s ease all;
 	-ms-transition: .4s ease all;
 	transition: .4s ease all;
-	border-bottom-width: 4px !important;
-	border-style: solid !important;
+	border-bottom-width: 4px;
+	border-style: solid;
 }
 .pg-canvas {
 	position: absolute;
@@ -421,17 +421,30 @@ body {
 	padding: 0px 20px;
 }
 .dash .advert_cont .advert_title h3 {
-	margin-right: 200px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	line-height:  60px;
 	font-weight:  100;
 	font-size: 30px;
+	padding: 0px;
+	margin: 0px 20% 0px 0px;
 }
 .dash .advert_cont .advert_title .btn {
 	color: #89290a;
-	border: none;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	position:  absolute;
+	right: 10px;
+	top: 10px;
+}
+.dash .advert_cont .advert_title .btn:first-child {
+	border-right-width: 1px;
+}
+.dash .advert_cont .advert_title .btn:last-child {
+	border-left-width: 1px;
 }
 .dash .advert_cont .advert_stats {
 	background: #141c25;
