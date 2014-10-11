@@ -63,7 +63,10 @@
 					</div>
 					<div class="account">
 						<button class="btn btn_account"><i class="fa fa-cog"></i> account</button>
-						<button class="btn btn-warning btn_add_ad pull-right"><i class="fa fa-plus"></i> add an ad</button>
+						<button ng-click="show=!show" class="btn btn-warning btn_add_ad pull-right"><i class="fa fa-plus"></i> add an ad</button>
+						<div ng-show="show" class="row">
+							<div class="col-sm-12">test</div>
+						</div>
 					</div>
 				</div>
 			</div>
