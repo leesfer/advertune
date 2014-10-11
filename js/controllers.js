@@ -57,6 +57,6 @@ angular.module('myApp.controllers', [])
 
 	}])
 
-	.controller('DashboardController', ['scope', function($scope) {
-		$scope.show=false;
+	.controller('DashboardController', ['$scope', function($scope) {
+		$scope.show = false;
 	}]);
