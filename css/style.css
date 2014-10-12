@@ -400,6 +400,10 @@ body {
 .dash .overview {
 	width: 100%;
 	margin: 40px 0px;
+	-webkit-transition: 1s ease all;
+	-moz-transition: 1s ease all;
+	-ms-transition: 1s ease all;
+	transition: 1s ease all;
 }
 .dash .overview .cashmoney {
 	width: 100%;
@@ -445,6 +449,7 @@ body {
 	width: 100%;
 	padding: 10px;
 	position: relative;
+	background: #2c3e50;
 	-webkit-transition: 1s ease all;
 	-moz-transition: 1s ease all;
 	-ms-transition: 1s ease all;
