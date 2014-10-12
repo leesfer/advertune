@@ -400,10 +400,6 @@ body {
 .dash .overview {
 	width: 100%;
 	margin: 40px 0px;
-	-webkit-transition: 1s ease all;
-	-moz-transition: 1s ease all;
-	-ms-transition: 1s ease all;
-	transition: 1s ease all;
 }
 .dash .overview .cashmoney {
 	width: 100%;
@@ -450,10 +446,6 @@ body {
 	padding: 10px;
 	position: relative;
 	background: #2c3e50;
-	-webkit-transition: 1s ease all;
-	-moz-transition: 1s ease all;
-	-ms-transition: 1s ease all;
-	transition: 1s ease all;
 }
 .dash .overview .account .mainbar {
 	position: relative;
@@ -461,6 +453,7 @@ body {
 	top: 0px;
 	left: 0px;
 	background: #2c3e50;
+	z-index: 700;
 }
 .dash .overview .account .btn_account {
 	background: #1b2632;
@@ -478,6 +471,8 @@ body {
 	width: 100%;
 	margin-top: 10px;
 	padding: 10px 10px 0px 10px;
+	position: absolute;
+	z-index: 600;
 }
 .dash .overview .account .add_an_ad.ng-hide-add {
 	-webkit-animation: fadeOutUp 1s;
@@ -488,10 +483,10 @@ body {
 .dash .overview .account .add_an_ad.ng-hide-add.ng-hide-add-active {
 }
 .dash .overview .account .add_an_ad.ng-hide-remove {
-	-webkit-animation: bounceInDown 1s;
-    -moz-animation: bounceInDown 1s;
-    -ms-animation: bounceInDown 1s;
-    animation: bounceInDown 1s;
+	-webkit-animation: fadeInDown 1s;
+    -moz-animation: fadeInDown 1s;
+    -ms-animation: fadeInDown 1s;
+    animation: fadeInDown 1s;
 }
 .dash .overview .account .add_an_ad.ng-hide-remove.ng-hide-remove-active {
 }
