@@ -445,8 +445,10 @@ body {
 	width: 100%;
 	padding: 10px;
 	position: relative;
-	-webkit-transition-timing-function: linear; /* Safari and Chrome */
-    transition-timing-function: linear;
+	-webkit-transition-timing-function: ease; /* Safari and Chrome */
+    transition-timing-function: ease;
+    -webkit-animation-timing-function: ease; /* Chrome, Safari, Opera */
+    animation-timing-function: ease;
 }
 .dash .overview .account .mainbar {
 	position: relative;
