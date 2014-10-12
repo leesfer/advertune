@@ -447,6 +447,13 @@ body {
 	padding: 10px;
 	position: relative;
 }
+.dash .overview .account .mainbar {
+	position: relative;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background: #2c3e50;
+}
 .dash .overview .account .btn_account {
 	background: #1b2632;
 	color: #fff;
@@ -458,11 +465,13 @@ body {
 }
 .dash .overview .account .add_an_ad {
 	color: #fff;
+	background: #2c3e50;
 	border-top: 1px solid #1b2632;
 	width: 100%;
 	margin-top: 10px;
 	padding: 10px 10px 0px 10px;
 	position: absolute;
+	left: 0px;
 }
 .dash .overview .account .add_an_ad.ng-hide-add {
 	-webkit-animation: fadeOutUp 1s;
@@ -473,10 +482,10 @@ body {
 .dash .overview .account .add_an_ad.ng-hide-add.ng-hide-add-active {
 }
 .dash .overview .account .add_an_ad.ng-hide-remove {
-	-webkit-animation: fadeInDown 1s;
-    -moz-animation: fadeInDown 1s;
-    -ms-animation: fadeInDown 1s;
-    animation: fadeInDown 1s;
+	-webkit-animation: bounceInDown 1s;
+    -moz-animation: bounceInDown 1s;
+    -ms-animation: bounceInDown 1s;
+    animation: bounceInDown 1s;
 }
 .dash .overview .account .add_an_ad.ng-hide-remove.ng-hide-remove-active {
 }

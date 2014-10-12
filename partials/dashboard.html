@@ -62,8 +62,10 @@
 						<button class="btn btn_add_funds pull-right"><i class="fa fa-dollar"></i><br>add funds</button>
 					</div>
 					<div class="account">
-						<button class="btn btn_account"><i class="fa fa-cog"></i> account</button>
-						<button ng-click="addAnAd = !addAnAd" class="btn btn-warning btn_add_ad pull-right"><i class="fa fa-plus"></i> add an ad</button>
+						<div class="mainbar">
+							<button class="btn btn_account"><i class="fa fa-cog"></i> account</button>
+							<button ng-click="addAnAd = !addAnAd" class="btn btn-warning btn_add_ad pull-right"><i class="fa fa-plus"></i> add an ad</button>
+						</div>
 						<div ng-show="addAnAd" class="add_an_ad animated">
 							test content
 						</div>
