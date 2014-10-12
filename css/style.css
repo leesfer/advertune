@@ -458,6 +458,9 @@ body {
 .dash .overview .account .add_an_ad {
 	color: #fff;
 	border-top: 1px solid #1b2632;
+	width: 100%;
+	float: left;
+	padding: 10px;
 }
 .dash .overview .account .add_an_ad.ng-hide-add {
     -webkit-animation: fadeOutUp 1s;

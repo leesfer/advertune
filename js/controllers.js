@@ -58,5 +58,5 @@ angular.module('myApp.controllers', [])
 	}])
 
 	.controller('DashboardController', ['$scope', function($scope) {
-		$scope.hide = true;
+		$scope.addAnAd = false;
 	}]);
