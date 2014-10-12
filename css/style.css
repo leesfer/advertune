@@ -455,21 +455,21 @@ body {
 	width: 100px;
 	border-width: 0px;
 }
-.dash .overview .account .add_an_add {
+.dash .overview .account .add_an_ad {
 	color: #fff;
 	border-top: 1px solid #1b2632;
 }
-.dash .overview .account .add_an_add.ng-hide-add {
-    -webkit-animation: fadeInLeft 1s;
-    -moz-animation: fadeInLeft 1s;
-    -ms-animation: fadeInLeft 1s;
-    animation: fadeInLeft 1s;
+.dash .overview .account .add_an_ad.ng-hide-add {
+    -webkit-animation: fadeOutUp 1s;
+    -moz-animation: fadeOutUp 1s;
+    -ms-animation: fadeOutUp 1s;
+    animation: fadeOutUp 1s;
 }
-.dash .overview .account .add_an_add.ng-hide-remove{
-    -webkit-animation: bounceOut 1s;
-    -moz-animation: bounceOut 1s;
-    -ms-animation: bounceOut 1s;
-    animation: bounceOut 1s;
+.dash .overview .account .add_an_ad.ng-hide-remove{
+    -webkit-animation: bounceInDown1s;
+    -moz-animation: bounceInDown 1s;
+    -ms-animation: bounceInDown 1s;
+    animation: bounceInDown 1s;
 }
 .dash .advert_list {
 	padding: 0px;
