@@ -482,10 +482,10 @@ body {
 .dash .overview .account .add_an_ad.ng-hide-add.ng-hide-add-active {
 }
 .dash .overview .account .add_an_ad.ng-hide-remove {
-	-webkit-animation: fadeInDown 1s;
-    -moz-animation: fadeInDown 1s;
-    -ms-animation: fadeInDown 1s;
-    animation: fadeInDown 1s;
+	-webkit-animation: slideDown 1s;
+    -moz-animation: slideDown 1s;
+    -ms-animation: slideDown 1s;
+    animation: slideDown 1s;
 }
 .dash .overview .account .add_an_ad.ng-hide-remove.ng-hide-remove-active {
 }
@@ -644,4 +644,36 @@ body {
 	padding: 100px 0px 120px 0px;
 }
 @media (min-width:1200px) {
+}
+
+
+/* TEST */
+
+-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.slideDown {
+  -webkit-animation-name: slideDown;
+          animation-name: slideDown;
 }
